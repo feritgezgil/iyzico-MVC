@@ -1,6 +1,6 @@
 iyzico-MVC5
 
-    iyzico Sanalpos Entegrasyonu ile Asp.Net MVC kullanımı için örnek bir şablondur.
+   iyzico Sanalpos Entegrasyonu ile Asp.Net MVC kullanımı için örnek bir şablondur.
 
 IyziPay NuGet Kurulumu
 
@@ -9,13 +9,13 @@ IyziPay NuGet Kurulumu
   
 API ayarları
 
-    •	İyzico üyelik işlemlerini tamaladıktan sonra, size verilecek bilgileri HomeController.cs dosyasında aşağıdaki alanlara işleyiniz.
+   •	İyzico üyelik işlemlerini tamaladıktan sonra, size verilecek bilgileri HomeController.cs dosyasında aşağıdaki alanlara işleyiniz.
 
             options.ApiKey = "API ANAHTARI";
             options.SecretKey = "API SECRETKEY";
             options.BaseUrl = "https://sandbox-api.iyzipay.com";
 
-    •	Geri dönüş URL'nizi İzyco Panel üzerinden tanımlayınız ve HomeController.cs içerisinde bu adresi belirtiniz.
+   •	Geri dönüş URL'nizi İzyco Panel üzerinden tanımlayınız ve HomeController.cs içerisinde bu adresi belirtiniz.
 
             request.CallbackUrl = "http:/<Iyzico Api Geri Dönüş Adresi>/OdemeSonucu"; /// Geri Dönüş Urlsi
 
