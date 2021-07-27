@@ -40,9 +40,9 @@ namespace IyzicoPay.Controllers
             request.EnabledInstallments = enabledInstallments;
 
             Buyer buyer = new Buyer();
-            buyer.Id ="1";
-            buyer.Name ="Ferit Gezgil";
-            buyer.Surname = "Bozkurt";
+            buyer.Id = "1";
+            buyer.Name = "Ferit";
+            buyer.Surname = "Gezgil";
             buyer.GsmNumber = "-";
             buyer.Email = "info@feritgezgil.com";
             buyer.IdentityNumber = "12345678911";
@@ -56,8 +56,8 @@ namespace IyzicoPay.Controllers
             request.Buyer = buyer;
 
             Address shippingAddress = new Address();
-            shippingAddress.ContactName =  "Ferit Gezgil" ;
-            shippingAddress.City = "Antalya";
+            shippingAddress.ContactName = "Ferit Gezgil";
+            shippingAddress.City = "İzmir";
             shippingAddress.Country = "Turkey";
             shippingAddress.Description = "Mahalle --- İzmir";
             shippingAddress.ZipCode = "35130";
@@ -73,15 +73,37 @@ namespace IyzicoPay.Controllers
 
             List<BasketItem> basketItems = new List<BasketItem>();
 
-            foreach (var item in <ÜrünListesiModeli>) //Session'da tutmuş oldugum sepette bulunan ürünler
+
+            /** Demo ürün listesi manuel olarak doldurulmuştur.**/
+            List<Product> productList = new List<Product>() { 
+                new Product
+                {
+                    StockCode = "PR0001",
+                    Name =  "Dell 5010",
+                    CategoryName = "Bilgisayar",
+                    SubCategoryName = "Dizüstü",
+                    Price = 10350
+                },
+                 new Product
+                {
+                    StockCode = "PR0002",
+                    Name =  "Asus Zenbook",
+                    CategoryName = "Bilgisayar",
+                    SubCategoryName = "Dizüstü",
+                    Price = 12550
+                }
+            };
+            
+
+            foreach (var item in productList) 
             {
                 BasketItem firstBasketItem = new BasketItem();
-                firstBasketItem.Id = item.Kodu;
-                firstBasketItem.Name = item.Adi;
-                firstBasketItem.Category1 = item.KategoriAdi;
-                firstBasketItem.Category2 = "Ürün";
+                firstBasketItem.Id = item.StockCode;
+                firstBasketItem.Name = item.Name;
+                firstBasketItem.Category1 = item.CategoryName;
+                firstBasketItem.Category2 = item.SubCategoryName;
                 firstBasketItem.ItemType = BasketItemType.PHYSICAL.ToString();
-                firstBasketItem.Price = item.Fiyat1.ToString();
+                firstBasketItem.Price = item.Price.ToString();
                 basketItems.Add(firstBasketItem);
             }
 
