@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IyzicoPay", "IyzicoPay\IyzicoPay.csproj", "{16FAAF79-FF04-4F41-9C3E-B99034CEEFFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IyzicoPay", "IyzicoPay\IyzicoPay.csproj", "{C1487D85-662A-4EB1-A7BA-07FE10D2CAFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16FAAF79-FF04-4F41-9C3E-B99034CEEFFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16FAAF79-FF04-4F41-9C3E-B99034CEEFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16FAAF79-FF04-4F41-9C3E-B99034CEEFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16FAAF79-FF04-4F41-9C3E-B99034CEEFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1487D85-662A-4EB1-A7BA-07FE10D2CAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1487D85-662A-4EB1-A7BA-07FE10D2CAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1487D85-662A-4EB1-A7BA-07FE10D2CAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1487D85-662A-4EB1-A7BA-07FE10D2CAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1D1BB8DD-1759-4863-921F-A15E01DE190A}
+		SolutionGuid = {F0E53EDD-1890-461A-AFC6-2F719B7E08DF}
 	EndGlobalSection
 EndGlobal
